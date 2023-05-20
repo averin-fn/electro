@@ -92,7 +92,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="main-container">
       <div className="container-fluid">
         <table className="table">
           <thead>

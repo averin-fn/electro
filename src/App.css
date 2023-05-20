@@ -7,12 +7,18 @@ tr, td, th {
 }
 
 .container-fluid {
-    height: calc(100vh - 60px);
+    height: 100%;
     overflow: auto;
 }
 
 table {
     min-width: 1000px;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container {
@@ -22,7 +28,6 @@ table {
     align-items: center;
     width: 100%;
     background: white;
-    position: relative;
 }
 
 .total-container {

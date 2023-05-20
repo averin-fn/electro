@@ -72,6 +72,8 @@ export function Row({ id, header, row, data, onChange, action }) {
     }
 
     setCount(value);
+    
+    data.count = value;
 
     updateCost(value, price);
   }
@@ -129,8 +131,8 @@ export function Row({ id, header, row, data, onChange, action }) {
         />
       </td>
       <td className="text-center">{row.measure}</td>
-      <td className="text-right">{price.toFixed(2)} р.</td>
-      <td className="text-right">{cost.toFixed(2)} р.</td>
+      <td className="text-right">{price} р.</td>
+      <td className="text-right">{cost} р.</td>
       <td className="text-center">
         <button
           type="button"
@@ -182,8 +184,8 @@ export function Row({ id, header, row, data, onChange, action }) {
         />
       </td>
       <td className="text-center">{row.measure}</td>
-      <td className="text-right">{price.toFixed(2)} р.</td>
-      <td className="text-right">{cost.toFixed(2)} р.</td>
+      <td className="text-right">{price} р.</td>
+      <td className="text-right">{cost} р.</td>
       <td className="text-center">
         <button
           type="button"

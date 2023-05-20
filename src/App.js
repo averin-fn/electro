@@ -5,14 +5,15 @@ import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 import ExcelJS from "exceljs";
 
+/** Выбранные группы, словарик - [Имя группы]: {[массив сток]} */
+const selectedGroups = {};
+
 /**
  * Основной компонент приложения
  */
 function App() {
   /** Поле итого и состояние */
   const [total, setTotal] = useState(0);
-  /** Выбранные группы, словарик - [Имя группы]: {[массив сток]} */
-  const selectedGroups = {};
 
   /**
    * Обработчик изменения группы
@@ -50,32 +51,63 @@ function App() {
 
   function download() {
     const workbook = new ExcelJS.Workbook();
-    const sheet = workbook.addWorksheet("Смета");
+    const sheet = workbook.addWorksheet("Смета", {
+      pageSetup: { fitToPage: true, fitToHeight: 5, fitToWidth: 7 },
+    });
+
+    sheet.getColumn(1).width = 30;
+    sheet.getColumn(2).width = 30;
+    sheet.getColumn(3).width = 30;
+    sheet.getColumn(4).width = 15;
+    sheet.getColumn(5).width = 10;
+    sheet.getColumn(6).width = 10;
+    sheet.getColumn(7).width = 15;
+
+    function setValue(cell, value, alignment ) {
+      cell.value = value;
+
+      cell.border = {
+        top: { style: "thin" },
+        left: { style: "thin" },
+        bottom: { style: "thin" },
+        right: { style: "thin" },
+      };
+
+      cell.alignment = { horizontal: alignment || 'left' };
+    }
 
     const header = sheet.getRow(1);
-    header.getCell(1).value = "Вид работы";
-    header.getCell(2).value = "Вид материала";
-    header.getCell(3).value = "Размер";
-    header.getCell(4).value = "Кол-во";
-    header.getCell(5).value = "Ед.изм.";
-    header.getCell(6).value = "Цена";
-    header.getCell(7).value = "Стоимость";
+    header.font = { bold: true };
+    setValue(header.getCell(1), "Вид работы", "center");
+    setValue(header.getCell(2), "Вид материала", "center");
+    setValue(header.getCell(3), "Размер", "center");
+    setValue(header.getCell(4), "Цена", "center");
+    setValue(header.getCell(5), "Ед.изм.", "center");
+    setValue(header.getCell(6), "Кол-во", "center");
+    setValue(header.getCell(7), "Стоимость", "center");
 
     let rowNumber = 2;
-    Object.keys(selectedGroups).forEach(key => {
-      selectedGroups[key].forEach(r => {
-      const row = sheet.getRow(rowNumber);
-        row.getCell(1).value = key;
-        row.getCell(2).value = r.materialType;
-        row.getCell(3).value = r.sizeType;
-        row.getCell(4).value = r.price;
-        row.getCell(5).value = r.measure;
-        row.getCell(6).value = r.count;
-        row.getCell(7).value = r.cost;
-        rowNumber++;
-      });
+    Object.keys(selectedGroups).forEach((key) => {
+      selectedGroups[key]
+        .filter((r) => r.cost && r.cost > 0)
+        .sort((a, b) => a.number > b.number)
+        .forEach((r) => {
+          const row = sheet.getRow(rowNumber);
+          setValue(row.getCell(1), key);
+          setValue(row.getCell(2), r.materialType || '-',);
+          setValue(row.getCell(3), r.sizeType || '-');
+          setValue(row.getCell(4), r.price + " р.", "right");
+          setValue(row.getCell(5), r.measure, "center");
+          setValue(row.getCell(6), r.count, "center");
+          setValue(row.getCell(7), r.cost + " р.", "right");
+          rowNumber++;
+        });
     });
-    
+
+    const totalRow = sheet.getRow(rowNumber);
+    setValue(totalRow.getCell(6), "Сумма:", "center");
+    setValue(totalRow.getCell(7), total + " р.", "right");
+
     workbook.xlsx
       .writeBuffer({
         base64: true,
@@ -128,7 +160,7 @@ function App() {
         </table>
       </div>
       <div className="footer-container">
-        <div className="total-container">Итого: {total.toFixed(2)} р.</div>
+        <div className="total-container">Итого: {total} р.</div>
         <div className="action-panel">
           <button
             type="button"

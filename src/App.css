@@ -1,0 +1,48 @@
+td, th {
+    vertical-align: middle;
+}
+
+tr, td, th {
+    border: 1px solid var(--bs-border-color) !important;
+}
+
+.container-fluid {
+    height: 100%;
+    overflow: auto;
+}
+
+table {
+    min-width: 1000px;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    border-top: 1px solid var(--bs-border-color);
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.total-container {
+    width: 50%;
+    font-weight: bold;
+}
+
+.action-panel {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.table > thead > tr > th {
+    position: sticky;
+    top: 0;
+    background: white;
+}

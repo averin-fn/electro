@@ -1,0 +1,13 @@
+tr.group-header > td {
+    /* position: sticky;
+    top: 0;
+    background: white; */
+}
+
+td.text-right {
+    text-align: right;
+}
+
+td.text-center {
+    text-align: center;
+}

@@ -1,0 +1,327 @@
+[
+  {
+    "number": "1",
+    "workType": "Монтаж кабеля",
+    "measure": "м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "2-x жильный",
+        "sizeOptions": [
+          {
+            "title": "Сечение 0.75мм",
+            "price": 1
+          },
+          {
+            "title": "Сечение 1,5мм",
+            "price": 2
+          },
+          {
+            "title": "Сечение 2,5мм",
+            "price": 3
+          },
+          {
+            "title": "Сечение 4мм",
+            "price": 4
+          },
+          {
+            "title": "Сечение 6мм",
+            "price": 5
+          },
+          {
+            "title": "Сечение 10мм",
+            "price": 6
+          },
+          {
+            "title": "Сечение 16мм",
+            "price": 6
+          }
+        ]
+      },
+      {
+        "title": "3-x жильный",
+        "sizeOptions": [
+          {
+            "title": "Сечение 0.75мм",
+            "price": 1
+          },
+          {
+            "title": "Сечение 1,5мм",
+            "price": 2
+          },
+          {
+            "title": "Сечение 2,5мм",
+            "price": 3
+          },
+          {
+            "title": "Сечение 4мм",
+            "price": 4
+          },
+          {
+            "title": "Сечение 6мм",
+            "price": 5
+          },
+          {
+            "title": "Сечение 10мм",
+            "price": 6
+          },
+          {
+            "title": "Сечение 16мм",
+            "price": 6
+          }
+        ]
+      },
+      {
+        "title": "4-x жильный",
+        "sizeOptions": [
+          {
+            "title": "Сечение 0.75мм",
+            "price": 1
+          },
+          {
+            "title": "Сечение 1,5мм",
+            "price": 2
+          },
+          {
+            "title": "Сечение 2,5мм",
+            "price": 3
+          },
+          {
+            "title": "Сечение 4мм",
+            "price": 4
+          },
+          {
+            "title": "Сечение 6мм",
+            "price": 5
+          },
+          {
+            "title": "Сечение 10мм",
+            "price": 6
+          },
+          {
+            "title": "Сечение 16мм",
+            "price": 6
+          }
+        ]
+      },
+      {
+        "title": "5-и жильный",
+        "sizeOptions": [
+          {
+            "title": "Сечение 0.75мм",
+            "price": 1
+          },
+          {
+            "title": "Сечение 1,5мм",
+            "price": 2
+          },
+          {
+            "title": "Сечение 2,5мм",
+            "price": 3
+          },
+          {
+            "title": "Сечение 4мм",
+            "price": 4
+          },
+          {
+            "title": "Сечение 6мм",
+            "price": 5
+          },
+          {
+            "title": "Сечение 10мм",
+            "price": 6
+          },
+          {
+            "title": "Сечение 16мм",
+            "price": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "2",
+    "workType": "Монтаж провода",
+    "measure": "м.",
+    "materialDisabled": true,
+    "materialTypeOptions": [
+      {
+        "sizeOptions": [
+          {
+            "title": "Сечение 4мм²",
+            "price": 1
+          },
+          {
+            "title": "Сечение 10мм²",
+            "price": 2
+          },
+          {
+            "title": "Сечение 25мм²",
+            "price": 3
+          },
+          {
+            "title": "Сечение 35мм²",
+            "price": 4
+          },
+          {
+            "title": "Сечение 50мм²",
+            "price": 5
+          },
+          {
+            "title": "Сечение 95мм²",
+            "price": 6
+          },
+          {
+            "title": "Сечение 120мм²",
+            "price": 7
+          },
+          {
+            "title": "Сечение 150мм²",
+            "price": 8
+          },
+          {
+            "title": "Сечение 185мм",
+            "price": 9
+          },
+          {
+            "title": "Сечение 240мм",
+            "price": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "3",
+    "workType": "Монтаж кабеля слаботочной сети",
+    "measure": "м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "UTP",
+        "price": 1,
+        "sizeOptions": []
+      }
+    ]
+  },
+  {
+    "number": "4",
+    "workType": "Монтаж трубы, кабель-канала",
+    "measure": "м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Труба гофрированная",
+        "sizeOptions": [
+          {
+            "title": "до Ø20 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø32 мм",
+            "price": 2
+          },
+          {
+            "title": "до Ø50 мм",
+            "price": 3
+          }
+        ]
+      },
+      {
+        "title": "Труба ПВХ, ПНД",
+        "sizeOptions": [
+          {
+            "title": "до Ø20 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø32 мм",
+            "price": 2
+          },
+          {
+            "title": "до Ø50 мм",
+            "price": 3
+          }
+        ]
+      },
+      {
+        "title": "Металлорукав",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм",
+            "price": 1
+          }
+        ]
+      },
+      {
+        "title": "Кабель канал",
+        "sizeOptions": [
+          {
+            "title": "до 25X16",
+            "price": 1
+          },
+          {
+            "title": "до 60X40",
+            "price": 2
+          },
+          {
+            "title": "до 110X60",
+            "price": 3
+          }
+        ]
+      },
+      {
+        "title": "Труба металлическая",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм",
+            "price": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "5",
+    "workType": "Монтаж лотка",
+    "measure": "м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Лоток металический",
+        "price": 1,
+        "sizeOptions": []
+      },
+      {
+        "title": "Кронштейн",
+        "price": 2,
+        "sizeOptions": []
+      },
+      {
+        "title": "Подвес",
+        "price": 3,
+        "sizeOptions": []
+      },
+      {
+        "title": "Крышка",
+        "price": 4,
+        "sizeOptions": []
+      },
+      {
+        "title": "Переговорка",
+        "price": 5,
+        "sizeOptions": []
+      },
+      {
+        "title": "Угол/Тройник",
+        "price": 6,
+        "sizeOptions": []
+      },
+      {
+        "title": "Подъем/Опуск",
+        "price": 6,
+        "sizeOptions": []
+      }
+    ]
+  }
+]

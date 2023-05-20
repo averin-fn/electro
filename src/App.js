@@ -31,6 +31,12 @@ function App() {
       });
 
     setTotal(sum);
+
+    if (Object.keys(selectedGroups).length > 0) {
+      window.onbeforeunload = () => "Предупреждение";
+    } else {
+      window.onbeforeunload = null;
+    }
   };
 
   /** Группы и состояние */
@@ -63,7 +69,7 @@ function App() {
     sheet.getColumn(6).width = 10;
     sheet.getColumn(7).width = 15;
 
-    function setValue(cell, value, alignment ) {
+    function setValue(cell, value, alignment) {
       cell.value = value;
 
       cell.border = {
@@ -73,7 +79,7 @@ function App() {
         right: { style: "thin" },
       };
 
-      cell.alignment = { horizontal: alignment || 'left' };
+      cell.alignment = { horizontal: alignment || "left" };
     }
 
     const header = sheet.getRow(1);
@@ -94,8 +100,8 @@ function App() {
         .forEach((r) => {
           const row = sheet.getRow(rowNumber);
           setValue(row.getCell(1), key);
-          setValue(row.getCell(2), r.materialType || '-',);
-          setValue(row.getCell(3), r.sizeType || '-');
+          setValue(row.getCell(2), r.materialType || "-");
+          setValue(row.getCell(3), r.sizeType || "-");
           setValue(row.getCell(4), r.price + " р.", "right");
           setValue(row.getCell(5), r.measure, "center");
           setValue(row.getCell(6), r.count, "center");

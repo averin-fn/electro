@@ -7,18 +7,12 @@ tr, td, th {
 }
 
 .container-fluid {
-    height: 100%;
+    height: calc(100vh - 60px);
     overflow: auto;
 }
 
 table {
     min-width: 1000px;
-}
-
-.main-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-container {
@@ -27,18 +21,23 @@ table {
     display: inline-flex;
     align-items: center;
     width: 100%;
+    background: white;
+    position: relative;
 }
 
 .total-container {
-    width: 50%;
+    width: 100%;
     font-weight: bold;
 }
 
 .action-panel {
-    width: 50%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 10px;
+}
+
+.action-panel > button {
+    white-space: nowrap;
 }
 
 .table > thead > tr > th {

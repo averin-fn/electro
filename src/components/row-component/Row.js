@@ -90,7 +90,7 @@ export function Row({ id, header, row, data, onChange, action }) {
 
   return header ? (
     <tr className="group-header">
-      <td scope="row" className="text-center">{row.number}</td>
+      <td className="text-center">{row.number}</td>
       <td>{row.workType}</td>
       <td>
         <select
@@ -143,7 +143,7 @@ export function Row({ id, header, row, data, onChange, action }) {
     </tr>
   ) : (
     <tr>
-      <td scope="row"></td>
+      <td></td>
       <td></td>
       <td>
         <select

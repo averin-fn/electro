@@ -35,9 +35,10 @@ export function Row({ id, header, row, data, onChange, action }) {
       (i) => i.title === event.target.value
     );
 
-    data.materialType = materialType.title;
 
     if (materialType) {
+      data.materialType = materialType.title;
+
       if (materialType.price && materialType.sizeOptions.length === 0) {
         setPrice(materialType.price);
         updateCost(count, materialType.price);
@@ -45,6 +46,8 @@ export function Row({ id, header, row, data, onChange, action }) {
 
       setSizeOptions(materialType.sizeOptions);
     } else {
+      data.materialType = null;
+
       setPrice(0);
       updateCost(count, 0);
 
@@ -72,7 +75,7 @@ export function Row({ id, header, row, data, onChange, action }) {
     }
 
     setCount(value);
-    
+
     data.count = value;
 
     updateCost(value, price);

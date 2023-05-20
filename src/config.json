@@ -323,5 +323,255 @@
         "sizeOptions": []
       }
     ]
+  },
+  {
+    "number": "6",
+    "workType": "Штробление",
+    "measure": "м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Штробление в бетоне",
+        "sizeOptions": [
+          {
+            "title": "20Х40",
+            "price": 1
+          },
+          {
+            "title": "40Х40",
+            "price": 2
+          },
+          {
+            "title": "60Х40",
+            "price": 3
+          },
+          {
+            "title": "100Х40",
+            "price": 4
+          }
+        ]
+      },
+      {
+        "title": "Штробление в пеноблоке",
+        "sizeOptions": [
+          {
+            "title": "20Х40",
+            "price": 1
+          },
+          {
+            "title": "40Х40",
+            "price": 2
+          },
+          {
+            "title": "60Х40",
+            "price": 3
+          },
+          {
+            "title": "100Х40",
+            "price": 4
+          }
+        ]
+      },
+      {
+        "title": "Штробление в кирпиче",
+        "sizeOptions": [
+          {
+            "title": "20Х40",
+            "price": 1
+          },
+          {
+            "title": "40Х40",
+            "price": 2
+          },
+          {
+            "title": "60Х40",
+            "price": 3
+          },
+          {
+            "title": "100Х40",
+            "price": 4
+          }
+        ]
+      },
+      {
+        "title": "Штукатурка штроб",
+        "sizeOptions": [
+          {
+            "title": "100Х40",
+            "price": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "7",
+    "workType": "Сквозное сверление",
+    "measure": "см.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Сверление в металле",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм с вальцовской",
+            "price": 1
+          },
+          {
+            "title": "Вырезание отверстий угл.шлиф м.",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "Сверление в пеноблоке",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75 мм",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "Сверление в кирпиче",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75 мм",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "Сверление в бетоне",
+        "sizeOptions": [
+          {
+            "title": "до Ø32 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75 мм",
+            "price": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "8",
+    "workType": "Высверливание лунок",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "В гипсокартоне",
+        "sizeOptions": [
+          {
+            "title": "до Ø75Х50 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75Х80 мм",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "В кирпиче",
+        "sizeOptions": [
+          {
+            "title": "до Ø75Х50 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75Х80 мм",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "В бетоне",
+        "sizeOptions": [
+          {
+            "title": "до Ø75Х50 мм",
+            "price": 1
+          },
+          {
+            "title": "до Ø75Х80 мм",
+            "price": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "9",
+    "workType": "Установка подрозетников",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "В гипсокартоне",
+        "price": 1,
+        "sizeOptions": []
+      },
+      {
+        "title": "В бетоне",
+        "price": 2,
+        "sizeOptions": []
+      },
+      {
+        "title": "В кирпиче",
+        "price": 3,
+        "sizeOptions": []
+      },
+      {
+        "title": "В гипсолите",
+        "price": 4,
+        "sizeOptions": []
+      },
+      {
+        "title": "В пеноблоке",
+        "price": 5,
+        "sizeOptions": []
+      }
+    ]
+  },
+  {
+    "number": "10",
+    "workType": "Установка распаечных коробок",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Наружной",
+        "sizeOptions": [
+          {
+            "title": "80Х80Х60 мм",
+            "price": 1
+          },
+          {
+            "title": "100Х100Х60 мм",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "title": "Внутренней",
+        "sizeOptions": [
+          {
+            "title": "Ø80 мм",
+            "price": 1
+          }
+        ]
+      }
+    ]
   }
 ]

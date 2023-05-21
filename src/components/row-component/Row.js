@@ -42,6 +42,9 @@ export function Row({ id, header, row, data, onChange, action }) {
       if (materialType.price && materialType.sizeOptions.length === 0) {
         setPrice(materialType.price);
         updateCost(count, materialType.price);
+      } else {
+        setPrice(0);
+        updateCost(count, 0);
       }
 
       setSizeOptions(materialType.sizeOptions);

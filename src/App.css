@@ -4,11 +4,13 @@ td, th {
 
 tr, td, th {
     border: 1px solid var(--bs-border-color) !important;
+    color: var(--bs-body-color);
 }
 
 .container-fluid {
     height: 100%;
     overflow: auto;
+    background: var(--bs-body-bg);
 }
 
 table {
@@ -27,7 +29,8 @@ table {
     display: inline-flex;
     align-items: center;
     width: 100%;
-    background: white;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
 }
 
 .total-container {
@@ -48,5 +51,10 @@ table {
 .table > thead > tr > th {
     position: sticky;
     top: 0;
-    background: white;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.bi-sun {
+    margin-top: -1px;
 }

@@ -9,32 +9,32 @@
         "title": "2-x жильный",
         "sizeOptions": [
           {
-            "title": "Сечение 0.75мм",
-            "price": 1
+            "title": "Сечение 0.75мм²",
+            "price": 38
           },
           {
-            "title": "Сечение 1,5мм",
-            "price": 2
+            "title": "Сечение 1,5мм²",
+            "price": 42
           },
           {
-            "title": "Сечение 2,5мм",
-            "price": 3
+            "title": "Сечение 2,5мм²",
+            "price": 46
           },
           {
-            "title": "Сечение 4мм",
-            "price": 4
+            "title": "Сечение 4мм²",
+            "price": 50
           },
           {
-            "title": "Сечение 6мм",
-            "price": 5
+            "title": "Сечение 6мм²",
+            "price": 54
           },
           {
-            "title": "Сечение 10мм",
-            "price": 6
+            "title": "Сечение 10мм²",
+            "price": 62
           },
           {
-            "title": "Сечение 16мм",
-            "price": 6
+            "title": "Сечение 16мм²",
+            "price": 71
           }
         ]
       },
@@ -42,32 +42,32 @@
         "title": "3-x жильный",
         "sizeOptions": [
           {
-            "title": "Сечение 0.75мм",
-            "price": 1
+            "title": "Сечение 0.75мм²",
+            "price": 42
           },
           {
-            "title": "Сечение 1,5мм",
-            "price": 2
+            "title": "Сечение 1,5мм²",
+            "price": 46
           },
           {
-            "title": "Сечение 2,5мм",
-            "price": 3
+            "title": "Сечение 2,5мм²",
+            "price": 50
           },
           {
-            "title": "Сечение 4мм",
-            "price": 4
+            "title": "Сечение 4мм²",
+            "price": 53
           },
           {
-            "title": "Сечение 6мм",
-            "price": 5
+            "title": "Сечение 6мм²",
+            "price": 57
           },
           {
-            "title": "Сечение 10мм",
-            "price": 6
+            "title": "Сечение 10мм²",
+            "price": 65
           },
           {
-            "title": "Сечение 16мм",
-            "price": 6
+            "title": "Сечение 16мм²",
+            "price": 75
           }
         ]
       },
@@ -75,32 +75,32 @@
         "title": "4-x жильный",
         "sizeOptions": [
           {
-            "title": "Сечение 0.75мм",
-            "price": 1
+            "title": "Сечение 0.75мм²",
+            "price": 45
           },
           {
-            "title": "Сечение 1,5мм",
-            "price": 2
+            "title": "Сечение 1,5мм²",
+            "price": 50
           },
           {
-            "title": "Сечение 2,5мм",
-            "price": 3
+            "title": "Сечение 2,5мм²",
+            "price": 55
           },
           {
-            "title": "Сечение 4мм",
-            "price": 4
+            "title": "Сечение 4мм²",
+            "price": 60
           },
           {
-            "title": "Сечение 6мм",
-            "price": 5
+            "title": "Сечение 6мм²",
+            "price": 75
           },
           {
-            "title": "Сечение 10мм",
-            "price": 6
+            "title": "Сечение 10мм²",
+            "price": 80
           },
           {
-            "title": "Сечение 16мм",
-            "price": 6
+            "title": "Сечение 16мм²",
+            "price": 90
           }
         ]
       },
@@ -108,32 +108,32 @@
         "title": "5-и жильный",
         "sizeOptions": [
           {
-            "title": "Сечение 0.75мм",
-            "price": 1
+            "title": "Сечение 0.75мм²",
+            "price": 55
           },
           {
-            "title": "Сечение 1,5мм",
-            "price": 2
+            "title": "Сечение 1,5мм²",
+            "price": 60
           },
           {
-            "title": "Сечение 2,5мм",
-            "price": 3
+            "title": "Сечение 2,5мм²",
+            "price": 65
           },
           {
-            "title": "Сечение 4мм",
-            "price": 4
+            "title": "Сечение 4мм²",
+            "price": 75
           },
           {
-            "title": "Сечение 6мм",
-            "price": 5
+            "title": "Сечение 6мм²",
+            "price": 80
           },
           {
-            "title": "Сечение 10мм",
-            "price": 6
+            "title": "Сечение 10мм²",
+            "price": 85
           },
           {
-            "title": "Сечение 16мм",
-            "price": 6
+            "title": "Сечение 16мм²",
+            "price": 105
           }
         ]
       }
@@ -149,43 +149,43 @@
         "sizeOptions": [
           {
             "title": "Сечение 4мм²",
-            "price": 1
+            "price": 15
           },
           {
             "title": "Сечение 10мм²",
-            "price": 2
+            "price": 20
           },
           {
             "title": "Сечение 25мм²",
-            "price": 3
+            "price": 40
           },
           {
             "title": "Сечение 35мм²",
-            "price": 4
+            "price": 60
           },
           {
             "title": "Сечение 50мм²",
-            "price": 5
+            "price": 120
           },
           {
             "title": "Сечение 95мм²",
-            "price": 6
+            "price": 150
           },
           {
             "title": "Сечение 120мм²",
-            "price": 7
+            "price": 200
           },
           {
             "title": "Сечение 150мм²",
-            "price": 8
+            "price": 250
           },
           {
             "title": "Сечение 185мм",
-            "price": 9
+            "price": 300
           },
           {
             "title": "Сечение 240мм",
-            "price": 10
+            "price": 400
           }
         ]
       }
@@ -199,7 +199,7 @@
     "materialTypeOptions": [
       {
         "title": "UTP",
-        "price": 1,
+        "price": 35,
         "sizeOptions": []
       }
     ]
@@ -215,15 +215,15 @@
         "sizeOptions": [
           {
             "title": "до Ø20 мм",
-            "price": 1
+            "price": 30
           },
           {
             "title": "до Ø32 мм",
-            "price": 2
+            "price": 40
           },
           {
             "title": "до Ø50 мм",
-            "price": 3
+            "price": 50
           }
         ]
       },
@@ -232,15 +232,15 @@
         "sizeOptions": [
           {
             "title": "до Ø20 мм",
-            "price": 1
+            "price": 35
           },
           {
             "title": "до Ø32 мм",
-            "price": 2
+            "price": 45
           },
           {
             "title": "до Ø50 мм",
-            "price": 3
+            "price": 60
           }
         ]
       },
@@ -249,7 +249,7 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 1
+            "price": 45
           }
         ]
       },
@@ -258,15 +258,15 @@
         "sizeOptions": [
           {
             "title": "до 25X16",
-            "price": 1
+            "price": 90
           },
           {
             "title": "до 60X40",
-            "price": 2
+            "price": 160
           },
           {
             "title": "до 110X60",
-            "price": 3
+            "price": 200
           }
         ]
       },
@@ -275,7 +275,7 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 1
+            "price": 250
           }
         ]
       }
@@ -289,37 +289,49 @@
     "materialTypeOptions": [
       {
         "title": "Лоток металический",
-        "price": 1,
-        "sizeOptions": []
+        "sizeOptions": [
+          {
+            "title": "Ширина до 200мм",
+            "price": 350
+          },
+          {
+            "title": "Ширина до 400мм",
+            "price": 450
+          },
+          {
+            "title": "Ширина до 600мм",
+            "price": 550
+          }
+        ]
       },
       {
         "title": "Кронштейн",
-        "price": 2,
+        "price": 150,
         "sizeOptions": []
       },
       {
         "title": "Подвес",
-        "price": 3,
+        "price": 150,
         "sizeOptions": []
       },
       {
         "title": "Крышка",
-        "price": 4,
+        "price": 150,
         "sizeOptions": []
       },
       {
-        "title": "Переговорка",
-        "price": 5,
+        "title": "Перегородка",
+        "price": 150,
         "sizeOptions": []
       },
       {
         "title": "Угол/Тройник",
-        "price": 6,
+        "price": 350,
         "sizeOptions": []
       },
       {
         "title": "Подъем/Опуск",
-        "price": 6,
+        "price": 150,
         "sizeOptions": []
       }
     ]
@@ -335,19 +347,19 @@
         "sizeOptions": [
           {
             "title": "20Х40",
-            "price": 1
+            "price": 390
           },
           {
             "title": "40Х40",
-            "price": 2
+            "price": 480
           },
           {
             "title": "60Х40",
-            "price": 3
+            "price": 690
           },
           {
             "title": "100Х40",
-            "price": 4
+            "price": 1200
           }
         ]
       },
@@ -356,19 +368,19 @@
         "sizeOptions": [
           {
             "title": "20Х40",
-            "price": 1
+            "price": 120
           },
           {
             "title": "40Х40",
-            "price": 2
+            "price": 190
           },
           {
             "title": "60Х40",
-            "price": 3
+            "price": 290
           },
           {
             "title": "100Х40",
-            "price": 4
+            "price": 490
           }
         ]
       },
@@ -377,19 +389,19 @@
         "sizeOptions": [
           {
             "title": "20Х40",
-            "price": 1
+            "price": 180
           },
           {
             "title": "40Х40",
-            "price": 2
+            "price": 240
           },
           {
             "title": "60Х40",
-            "price": 3
+            "price": 390
           },
           {
             "title": "100Х40",
-            "price": 4
+            "price": 690
           }
         ]
       },
@@ -398,7 +410,7 @@
         "sizeOptions": [
           {
             "title": "100Х40",
-            "price": 4
+            "price": 80
           }
         ]
       }
@@ -415,11 +427,11 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм с вальцовской",
-            "price": 1
+            "price": 150
           },
           {
             "title": "Вырезание отверстий угл.шлиф м.",
-            "price": 2
+            "price": 10
           }
         ]
       },
@@ -428,11 +440,11 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 1
+            "price": 4
           },
           {
             "title": "до Ø75 мм",
-            "price": 2
+            "price": 10
           }
         ]
       },
@@ -441,11 +453,11 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 1
+            "price": 6
           },
           {
             "title": "до Ø75 мм",
-            "price": 2
+            "price": 20
           }
         ]
       },
@@ -454,11 +466,11 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 1
+            "price": 11
           },
           {
             "title": "до Ø75 мм",
-            "price": 2
+            "price": 30
           }
         ]
       }
@@ -475,11 +487,11 @@
         "sizeOptions": [
           {
             "title": "до Ø75Х50 мм",
-            "price": 1
+            "price": 100
           },
           {
             "title": "до Ø75Х80 мм",
-            "price": 2
+            "price": 120
           }
         ]
       },
@@ -488,11 +500,11 @@
         "sizeOptions": [
           {
             "title": "до Ø75Х50 мм",
-            "price": 1
+            "price": 150
           },
           {
             "title": "до Ø75Х80 мм",
-            "price": 2
+            "price": 180
           }
         ]
       },
@@ -501,11 +513,11 @@
         "sizeOptions": [
           {
             "title": "до Ø75Х50 мм",
-            "price": 1
+            "price": 350
           },
           {
             "title": "до Ø75Х80 мм",
-            "price": 2
+            "price": 400
           }
         ]
       }
@@ -519,27 +531,27 @@
     "materialTypeOptions": [
       {
         "title": "В гипсокартоне",
-        "price": 1,
+        "price": 70,
         "sizeOptions": []
       },
       {
         "title": "В бетоне",
-        "price": 2,
+        "price": 100,
         "sizeOptions": []
       },
       {
         "title": "В кирпиче",
-        "price": 3,
+        "price": 100,
         "sizeOptions": []
       },
       {
         "title": "В гипсолите",
-        "price": 4,
+        "price": 100,
         "sizeOptions": []
       },
       {
         "title": "В пеноблоке",
-        "price": 5,
+        "price": 100,
         "sizeOptions": []
       }
     ]
@@ -555,11 +567,11 @@
         "sizeOptions": [
           {
             "title": "80Х80Х60 мм",
-            "price": 1
+            "price": 250
           },
           {
             "title": "100Х100Х60 мм",
-            "price": 2
+            "price": 250
           }
         ]
       },
@@ -568,9 +580,449 @@
         "sizeOptions": [
           {
             "title": "Ø80 мм",
-            "price": 1
+            "price": 250
           }
         ]
+      }
+    ]
+  },
+  {
+    "number": "11",
+    "workType": "Установка автоматов",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Автомат",
+        "sizeOptions": [
+          {
+            "title": "Однополюсной",
+            "price": 210
+          },
+          {
+            "title": "Двухполюсной",
+            "price": 270
+          },
+          {
+            "title": "Трехполюсной",
+            "price": 390
+          },
+          {
+            "title": "Четырехполюсной",
+            "price": 550
+          }
+        ]
+      },
+      {
+        "title": "УЗО",
+        "sizeOptions": [
+          {
+            "title": "Однополюсное",
+            "price": 380
+          },
+          {
+            "title": "Двухполюсное",
+            "price": 450
+          },
+          {
+            "title": "Трехполюсное",
+            "price": 560
+          },
+          {
+            "title": "Четырехполюсное",
+            "price": 680
+          }
+        ]
+      },
+      {
+        "title": "Дифавтомат",
+        "sizeOptions": [
+          {
+            "title": "Однополюсной",
+            "price": 210
+          },
+          {
+            "title": "Двухполюсной",
+            "price": 270
+          },
+          {
+            "title": "Трехполюсной",
+            "price": 390
+          },
+          {
+            "title": "Четырехполюсной",
+            "price": 550
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "12",
+    "workType": "Установка бокса (щитка)",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Накладной",
+        "sizeOptions": [
+          {
+            "title": "до 24 модулей",
+            "price": 900
+          },
+          {
+            "title": "до 36 модулей",
+            "price": 1500
+          },
+          {
+            "title": "до 54 модулей",
+            "price": 2500
+          }
+        ]
+      },
+      {
+        "title": "Внутренний гипсокартон",
+        "sizeOptions": [
+          {
+            "title": "до 6 модулей",
+            "price": 1400
+          },
+          {
+            "title": "до 12 модулей",
+            "price": 1800
+          },
+          {
+            "title": "до 24 модулей",
+            "price": 2500
+          },
+          {
+            "title": "до 36 модулей",
+            "price": 2900
+          },
+          {
+            "title": "до 54 модулей",
+            "price": 3500
+          },
+          {
+            "title": "до 96 модулей",
+            "price": 5900
+          }
+        ]
+      },
+      {
+        "title": "Внутренний кирпич",
+        "sizeOptions": [
+          {
+            "title": "до 6 модулей",
+            "price": 1900
+          },
+          {
+            "title": "до 12 модулей",
+            "price": 2500
+          },
+          {
+            "title": "до 24 модулей",
+            "price": 3500
+          },
+          {
+            "title": "до 36 модулей",
+            "price": 3900
+          },
+          {
+            "title": "до 54 модулей",
+            "price": 4500
+          },
+          {
+            "title": "до 96 модулей",
+            "price": 7500
+          }
+        ]
+      },
+      {
+        "title": "Внутренний бетон",
+        "sizeOptions": [
+          {
+            "title": "до 6 модулей",
+            "price": 2900
+          },
+          {
+            "title": "до 12 модулей",
+            "price": 3600
+          },
+          {
+            "title": "до 24 модулей",
+            "price": 4800
+          },
+          {
+            "title": "до 36 модулей",
+            "price": 5200
+          },
+          {
+            "title": "до 54 модулей",
+            "price": 5800
+          },
+          {
+            "title": "до 96 модулей",
+            "price": 9500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "13",
+    "workType": "Установка электросчетчика",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Установка счетчика",
+        "sizeOptions": [
+          {
+            "title": "Однофазного",
+            "price": 950
+          },
+          {
+            "title": "Трехфазного",
+            "price": 1400
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "14",
+    "workType": "Установка розеток",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Внутренняя",
+        "sizeOptions": [
+          {
+            "title": "Бытовая розетка",
+            "price": 200
+          },
+          {
+            "title": "Компьютерная (интернет)",
+            "price": 200
+          },
+          {
+            "title": "Для электроплиты",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "title": "Наружняя",
+        "sizeOptions": [
+          {
+            "title": "Бытовая розетка",
+            "price": 250
+          },
+          {
+            "title": "Компьютерная (интернет)",
+            "price": 250
+          },
+          {
+            "title": "Для электроплиты",
+            "price": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "15",
+    "workType": "Установка выключателей",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Внутренний",
+        "sizeOptions": [
+          {
+            "title": "1 клавишный",
+            "price": 180
+          },
+          {
+            "title": "1 клавишный проходной",
+            "price": 250
+          },
+          {
+            "title": "2 клавишный",
+            "price": 200
+          },
+          {
+            "title": "2 клавишный проходной",
+            "price": 300
+          }
+        ]
+      },
+      {
+        "title": "Наружний",
+        "sizeOptions": [
+          {
+            "title": "1 клавишный",
+            "price": 220
+          },
+          {
+            "title": "1 клавишный проходной",
+            "price": 250
+          },
+          {
+            "title": "2 клавишный",
+            "price": 250
+          },
+          {
+            "title": "2 клавишный проходной",
+            "price": 340
+          }
+        ]
+      },
+      {
+        "title": "Диммер",
+        "price": 250,
+        "sizeOptions": []
+      },
+      {
+        "title": "Реостат для теплого пола (терморегулятор)",
+        "price": 500,
+        "sizeOptions": []
+      }
+    ]
+  },
+  {
+    "number": "16",
+    "workType": "Установка светильников",
+    "measure": "шт./м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Светодиодная лампа",
+        "price": 300,
+        "sizeOptions": []
+      },
+      {
+        "title": "Светильник",
+        "sizeOptions": [
+          {
+            "title": "Настенный Бра",
+            "price": 300
+          },
+          {
+            "title": "Армстронг",
+            "price": 350
+          },
+          {
+            "title": "Потолочный накладной",
+            "price": 450
+          },
+          {
+            "title": "Точечный",
+            "price": 300
+          }
+        ]
+      },
+      {
+        "title": "Люстра",
+        "sizeOptions": [
+          {
+            "title": "С креплением к потолку (сложная, с пультом ДУ)",
+            "price": 1500
+          },
+          {
+            "title": "С креплением на крюк",
+            "price": 800
+          }
+        ]
+      },
+      {
+        "title": "Прожектор",
+        "price": 1000,
+        "sizeOptions": []
+      }
+    ]
+  },
+  {
+    "number": "17",
+    "workType": "Установка вытяжки, вентилятора",
+    "measure": "шт.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Вентилятор",
+        "sizeOptions": [
+          {
+            "title": "Канальный накладной",
+            "price": 550
+          },
+          {
+            "title": "Накладной (Вытяжка в ванной, кухне)",
+            "price": 850
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": "18",
+    "workType": "Монтаж теплого пола",
+    "measure": "м²",
+    "price": 700,
+    "materialDisabled": true,
+    "materialTypeOptions": []
+  },
+  {
+    "number": "19",
+    "workType": "Демонтажные работы",
+    "measure": "шт./м.",
+    "materialDisabled": false,
+    "materialTypeOptions": [
+      {
+        "title": "Вентилятора",
+        "price": 100,
+        "sizeOptions": []
+      },
+      {
+        "title": "Светильников, бра",
+        "price": 100,
+        "sizeOptions": []
+      },
+      {
+        "title": "Выключателя",
+        "price": 100,
+        "sizeOptions": []
+      },
+      {
+        "title": "Розетки накладной",
+        "price": 80,
+        "sizeOptions": []
+      },
+      {
+        "title": "Розетки встроенной",
+        "price": 80,
+        "sizeOptions": []
+      },
+      {
+        "title": "Звонка",
+        "price": 80,
+        "sizeOptions": []
+      },
+      {
+        "title": "Патрона (Отдельно висящего)",
+        "price": 50,
+        "sizeOptions": []
+      },
+      {
+        "title": "Электропроводки",
+        "price": 20,
+        "sizeOptions": []
+      },
+      {
+        "title": "Кабель-канала (короба)",
+        "price": 20,
+        "sizeOptions": []
       }
     ]
   }

@@ -92,9 +92,9 @@ function App() {
 
       if (background) {
         cell.fill = {
-          type: "pattern",
-          pattern: "darkTrellis",
-          bgColor: { argb: "FFD3D3D3" },
+          type: 'pattern',
+          pattern:'solid',
+          fgColor: { argb:'FFD3D3D3' }
         };
       }
     }

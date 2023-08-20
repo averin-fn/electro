@@ -44,11 +44,10 @@ function App() {
   };
 
   /** Группы и состояние */
-  const [groups, setGroups] = useState(init());
+  const [groups] = useState(init());
 
   function clear() {
-    setGroups(init());
-    setTotal(0);
+    window.location.reload();
   }
 
   function init() {

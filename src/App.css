@@ -36,6 +36,7 @@ table {
 .total-container {
     width: 100%;
     font-weight: bold;
+    display: flex;
 }
 
 .action-panel {
@@ -57,4 +58,14 @@ table {
 
 .bi-sun {
     margin-top: -1px;
+}
+
+.ratio-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.ratio-container input[type = text] {
+    width: 50px;
 }

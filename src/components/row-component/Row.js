@@ -4,7 +4,7 @@ import "./Row.css";
 /**
  * Компонент строки в группе
  * */
-export function Row({ id, header, row, data, onChange, action }) {
+export function Row({ id, header, row, data, onChange, action, ratio }) {
   // Опции размера, изменяются после выбра материала
   const [sizeOptions, setSizeOptions] = useState([]);
   // Цена
@@ -13,6 +13,15 @@ export function Row({ id, header, row, data, onChange, action }) {
   const [cost, setCost] = useState(0);
   // Количество
   const [count, setCount] = useState(0);
+
+  const [rowRatio, setRowRation] = useState(ratio);
+
+  if (ratio && !isNaN(ratio) && rowRatio !== ratio) {
+    const priceVal = Math.round((price/rowRatio) * ratio)
+    setPrice(priceVal);
+    updateCost(count, priceVal)
+    setRowRation(ratio);
+  }
 
   // Если нет видов материалов, то заполняем опции для размера
   if (
@@ -25,7 +34,7 @@ export function Row({ id, header, row, data, onChange, action }) {
 
   // Если есть цена, то нет опций и просто задаем цену
   if (row.price && price === 0) {
-    setPrice(row.price);
+    setPrice(row.price * ratio);
     data.price = row.price;
   }
 
@@ -35,13 +44,12 @@ export function Row({ id, header, row, data, onChange, action }) {
       (i) => i.title === event.target.value
     );
 
-
     if (materialType) {
       data.materialType = materialType.title;
 
       if (materialType.price && materialType.sizeOptions.length === 0) {
-        setPrice(materialType.price);
-        updateCost(count, materialType.price);
+        setPrice(Math.round(materialType.price * ratio));
+        updateCost(count, Math.round(materialType.price * ratio));
       } else {
         setPrice(0);
         updateCost(count, 0);
@@ -53,6 +61,7 @@ export function Row({ id, header, row, data, onChange, action }) {
 
       setPrice(0);
       updateCost(count, 0);
+      setCount(0);
 
       setSizeOptions([]);
     }
@@ -62,8 +71,16 @@ export function Row({ id, header, row, data, onChange, action }) {
   function handleSizeOnChange(event) {
     const sizeType = sizeOptions.find((i) => i.title === event.target.value);
 
+    if (!sizeType) {
+      setPrice(0);
+      setCount(0);
+      updateCost(count, 0);
+      
+      return;
+    }
+
     const price = sizeType ? sizeType.price : 0;
-    setPrice(price);
+    setPrice(price * ratio);
 
     data.sizeType = sizeType.title;
 
@@ -133,6 +150,7 @@ export function Row({ id, header, row, data, onChange, action }) {
           type="text"
           className="form-control"
           onInput={handleCountOnChange}
+          value={count}
           disabled={price === 0}
         />
       </td>
@@ -186,6 +204,7 @@ export function Row({ id, header, row, data, onChange, action }) {
           type="text"
           className="form-control"
           onChange={handleCountOnChange}
+          value={count}
           disabled={price === 0}
         />
       </td>

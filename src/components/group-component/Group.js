@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 /**
  * Компонент группы строк
  */
-export function Group({ row, onChange }) {
+export function Group({ row, onChange, ratio }) {
   /** Тип работы */
   const workType = row.workType;
 
@@ -72,6 +72,7 @@ export function Group({ row, onChange }) {
           header={r.header}
           row={r.row}
           data={r.data}
+          ratio={ratio}
           onChange={r.onChange}
           action={r.action}
         />

@@ -14,7 +14,7 @@ const selectedGroups = {};
 function App() {
   /** Поле итого и состояние */
   const [total, setTotal] = useState(0);
-
+  const [ratio, setRatio] = useState(1);
   const [currentTheme, setCurrentTheme] = useState(
     localStorage.getItem("theme")
   );
@@ -91,9 +91,9 @@ function App() {
 
       if (background) {
         cell.fill = {
-          type: 'pattern',
-          pattern:'solid',
-          fgColor: { argb:'FFD3D3D3' }
+          type: "pattern",
+          pattern: "solid",
+          fgColor: { argb: "FFD3D3D3" },
         };
       }
     }
@@ -187,13 +187,29 @@ function App() {
           </thead>
           <tbody>
             {groups.map((g) => (
-              <Group key={g.id} row={g.row} onChange={g.onChange} />
+              <Group
+                key={g.id}
+                row={g.row}
+                ratio={ratio}
+                onChange={g.onChange}
+              />
             ))}
           </tbody>
         </table>
       </div>
       <div className="footer-container">
-        <div className="total-container">Итого: {total} р.</div>
+        <div className="total-container">
+          Итого: {total} р.
+          <div className="ratio-container">
+            <div>Коэф. </div>
+            <input
+              type="text"
+              onChange={(event) => setRatio(event.target.value) }
+              value={ratio}
+            />
+          </div>
+        </div>
+
         <div className="action-panel">
           <button
             type="button"

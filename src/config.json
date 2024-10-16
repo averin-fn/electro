@@ -6,52 +6,19 @@
     "materialDisabled": false,
     "materialTypeOptions": [
       {
-        "title": "2-x жильный",
-        "sizeOptions": [
-          {
-            "title": "Сечение 0.75мм²",
-            "price": 50
-          },
-          {
-            "title": "Сечение 1,5мм²",
-            "price": 55
-          },
-          {
-            "title": "Сечение 2,5мм²",
-            "price": 65
-          },
-          {
-            "title": "Сечение 4мм²",
-            "price": 80
-          },
-          {
-            "title": "Сечение 6мм²",
-            "price": 100
-          },
-          {
-            "title": "Сечение 10мм²",
-            "price": 120
-          },
-          {
-            "title": "Сечение 16мм²",
-            "price": 160
-          }
-        ]
-      },
-      {
         "title": "3-x жильный",
         "sizeOptions": [
           {
             "title": "Сечение 0.75мм²",
-            "price": 50
+            "price": 70
           },
           {
             "title": "Сечение 1,5мм²",
-            "price": 55
+            "price": 70
           },
           {
             "title": "Сечение 2,5мм²",
-            "price": 65
+            "price": 70
           },
           {
             "title": "Сечение 4мм²",
@@ -68,39 +35,6 @@
           {
             "title": "Сечение 16мм²",
             "price": 160
-          }
-        ]
-      },
-      {
-        "title": "4-x жильный",
-        "sizeOptions": [
-          {
-            "title": "Сечение 0.75мм²",
-            "price": 60
-          },
-          {
-            "title": "Сечение 1,5мм²",
-            "price": 65
-          },
-          {
-            "title": "Сечение 2,5мм²",
-            "price": 75
-          },
-          {
-            "title": "Сечение 4мм²",
-            "price": 90
-          },
-          {
-            "title": "Сечение 6мм²",
-            "price": 110
-          },
-          {
-            "title": "Сечение 10мм²",
-            "price": 130
-          },
-          {
-            "title": "Сечение 16мм²",
-            "price": 170
           }
         ]
       },
@@ -109,15 +43,15 @@
         "sizeOptions": [
           {
             "title": "Сечение 0.75мм²",
-            "price": 60
+            "price": 90
           },
           {
             "title": "Сечение 1,5мм²",
-            "price": 65
+            "price": 90
           },
           {
             "title": "Сечение 2,5мм²",
-            "price": 75
+            "price": 90
           },
           {
             "title": "Сечение 4мм²",
@@ -199,7 +133,7 @@
     "materialTypeOptions": [
       {
         "title": "UTP",
-        "price": 50,
+        "price": 80,
         "sizeOptions": []
       }
     ]
@@ -211,7 +145,7 @@
     "materialDisabled": false,
     "materialTypeOptions": [
       {
-        "title": "Труба гофрированная",
+        "title": "Труба ПВХ, ПНД",
         "sizeOptions": [
           {
             "title": "до Ø20 мм",
@@ -219,28 +153,11 @@
           },
           {
             "title": "до Ø32 мм",
-            "price": 60
+            "price": 70
           },
           {
             "title": "до Ø50 мм",
-            "price": 90
-          }
-        ]
-      },
-      {
-        "title": "Труба ПВХ, ПНД",
-        "sizeOptions": [
-          {
-            "title": "до Ø20 мм",
-            "price": 35
-          },
-          {
-            "title": "до Ø32 мм",
-            "price": 45
-          },
-          {
-            "title": "до Ø50 мм",
-            "price": 60
+            "price": 100
           }
         ]
       },
@@ -249,37 +166,49 @@
         "sizeOptions": [
           {
             "title": "до Ø32 мм",
-            "price": 45
+            "price": 100
           }
         ]
       },
       {
-        "title": "Кабель канал",
+        "title": "Кабель канал (дерево)",
         "sizeOptions": [
           {
             "title": "до 25X16",
-            "price": 100
+            "price": 150
           },
           {
             "title": "до 40X25",
-            "price": 120
+            "price": 200
           },
           {
             "title": "до 60X40",
-            "price": 170
+            "price": 220
           },
           {
             "title": "до 110X60",
-            "price": 220
+            "price": 300
           }
         ]
       },
       {
-        "title": "Труба металлическая",
+        "title": "Кабель канал (бетон)",
         "sizeOptions": [
           {
-            "title": "до Ø32 мм",
+            "title": "до 25X16",
+            "price": 200
+          },
+          {
+            "title": "до 40X25",
             "price": 250
+          },
+          {
+            "title": "до 60X40",
+            "price": 270
+          },
+          {
+            "title": "до 110X60",
+            "price": 350
           }
         ]
       }
@@ -296,47 +225,17 @@
         "sizeOptions": [
           {
             "title": "Ширина до 200мм",
-            "price": 350
+            "price": 500
           },
           {
             "title": "Ширина до 400мм",
-            "price": 450
+            "price": 550
           },
           {
             "title": "Ширина до 600мм",
-            "price": 550
+            "price": 600
           }
         ]
-      },
-      {
-        "title": "Кронштейн",
-        "price": 150,
-        "sizeOptions": []
-      },
-      {
-        "title": "Подвес",
-        "price": 150,
-        "sizeOptions": []
-      },
-      {
-        "title": "Крышка",
-        "price": 150,
-        "sizeOptions": []
-      },
-      {
-        "title": "Перегородка",
-        "price": 150,
-        "sizeOptions": []
-      },
-      {
-        "title": "Угол/Тройник",
-        "price": 350,
-        "sizeOptions": []
-      },
-      {
-        "title": "Подъем/Опуск",
-        "price": 150,
-        "sizeOptions": []
       }
     ]
   },
@@ -351,40 +250,19 @@
         "sizeOptions": [
           {
             "title": "20Х40",
-            "price": 390
+            "price": 400
           },
           {
             "title": "40Х40",
-            "price": 480
+            "price": 450
           },
           {
             "title": "60Х40",
-            "price": 690
+            "price": 550
           },
           {
             "title": "100Х40",
-            "price": 1200
-          }
-        ]
-      },
-      {
-        "title": "Штробление в пеноблоке",
-        "sizeOptions": [
-          {
-            "title": "20Х40",
-            "price": 120
-          },
-          {
-            "title": "40Х40",
-            "price": 190
-          },
-          {
-            "title": "60Х40",
-            "price": 290
-          },
-          {
-            "title": "100Х40",
-            "price": 490
+            "price": 700
           }
         ]
       },
@@ -393,19 +271,19 @@
         "sizeOptions": [
           {
             "title": "20Х40",
-            "price": 180
+            "price": 250
           },
           {
             "title": "40Х40",
-            "price": 240
+            "price": 300
           },
           {
             "title": "60Х40",
-            "price": 390
+            "price": 400
           },
           {
             "title": "100Х40",
-            "price": 690
+            "price": 700
           }
         ]
       },
@@ -504,11 +382,11 @@
         "sizeOptions": [
           {
             "title": "до Ø75Х50 мм",
-            "price": 100
+            "price": 150
           },
           {
             "title": "до Ø75Х80 мм",
-            "price": 120
+            "price": 250
           }
         ]
       },
@@ -517,11 +395,11 @@
         "sizeOptions": [
           {
             "title": "до Ø75Х50 мм",
-            "price": 150
+            "price": 250
           },
           {
             "title": "до Ø75Х80 мм",
-            "price": 180
+            "price": 300
           }
         ]
       },
@@ -548,27 +426,17 @@
     "materialTypeOptions": [
       {
         "title": "В гипсокартоне",
-        "price": 70,
+        "price": 150,
         "sizeOptions": []
       },
       {
         "title": "В бетоне",
-        "price": 100,
+        "price": 150,
         "sizeOptions": []
       },
       {
         "title": "В кирпиче",
-        "price": 100,
-        "sizeOptions": []
-      },
-      {
-        "title": "В гипсолите",
-        "price": 100,
-        "sizeOptions": []
-      },
-      {
-        "title": "В пеноблоке",
-        "price": 100,
+        "price": 150,
         "sizeOptions": []
       }
     ]
@@ -580,30 +448,9 @@
     "materialDisabled": false,
     "materialTypeOptions": [
       {
-        "title": "80Х80Х60 мм",
-        "sizeOptions": [
-          {
-            "title": "Гильзовка, пайка",
-            "price": 350
-          },
-          {
-            "title": "Клемники ваго",
-            "price": 250
-          }
-        ]
-      },
-      {
         "title": "100Х100Х60 мм",
-        "sizeOptions": [
-          {
-            "title": "Гильзовка, пайка",
-            "price": 450
-          },
-          {
-            "title": "Клемники ваго",
-            "price": 300
-          }
-        ]
+        "price": 300,  
+        "sizeOptions": []
       }
     ]
   },
@@ -673,7 +520,7 @@
         "sizeOptions": [
           {
             "title": "до 24 модулей",
-            "price": 900
+            "price": 1000
           },
           {
             "title": "до 36 модулей",
@@ -686,23 +533,15 @@
         ]
       },
       {
-        "title": "Внутренний гипсокартон",
+        "title": "Внутренний",
         "sizeOptions": [
           {
-            "title": "до 6 модулей",
-            "price": 1400
-          },
-          {
-            "title": "до 12 модулей",
-            "price": 1800
-          },
-          {
             "title": "до 24 модулей",
-            "price": 2500
+            "price": 1500
           },
           {
             "title": "до 36 модулей",
-            "price": 2900
+            "price": 2500
           },
           {
             "title": "до 54 модулей",
@@ -710,65 +549,7 @@
           },
           {
             "title": "до 96 модулей",
-            "price": 5900
-          }
-        ]
-      },
-      {
-        "title": "Внутренний кирпич",
-        "sizeOptions": [
-          {
-            "title": "до 6 модулей",
-            "price": 1900
-          },
-          {
-            "title": "до 12 модулей",
-            "price": 2500
-          },
-          {
-            "title": "до 24 модулей",
-            "price": 3500
-          },
-          {
-            "title": "до 36 модулей",
-            "price": 3900
-          },
-          {
-            "title": "до 54 модулей",
-            "price": 4500
-          },
-          {
-            "title": "до 96 модулей",
-            "price": 7500
-          }
-        ]
-      },
-      {
-        "title": "Внутренний бетон",
-        "sizeOptions": [
-          {
-            "title": "до 6 модулей",
-            "price": 2900
-          },
-          {
-            "title": "до 12 модулей",
-            "price": 3600
-          },
-          {
-            "title": "до 24 модулей",
-            "price": 4800
-          },
-          {
-            "title": "до 36 модулей",
-            "price": 5200
-          },
-          {
-            "title": "до 54 модулей",
-            "price": 5800
-          },
-          {
-            "title": "до 96 модулей",
-            "price": 9500
+            "price": 7000
           }
         ]
       }
@@ -789,7 +570,7 @@
           },
           {
             "title": "Трехфазного",
-            "price": 1500
+            "price": 2000
           }
         ]
       }
@@ -917,15 +698,15 @@
           },
           {
             "title": "Армстронг",
-            "price": 350
+            "price": 400
           },
           {
             "title": "Потолочный накладной",
             "price": 550
           },
           {
-            "title": "Точечный",
-            "price": 300
+            "title": "Армстронг накладной",
+            "price": 700
           }
         ]
       },

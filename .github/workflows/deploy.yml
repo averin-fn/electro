@@ -45,20 +45,59 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Download client dist
+        uses: actions/download-artifact@v4
+        with:
+          name: client-dist
+          path: client/dist
+
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Add host key
+        env:
+          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -p "${{ secrets.SSH_PORT || 22 }}" -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${SSH_PORT}" -H "${SSH_HOST}" >> ~/.ssh/known_hosts
 
-      - name: Run remote deploy
+      - name: Backup data on server
         env:
+          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          APP_DIR: ${{ secrets.APP_DIR }}
+        run: |
+          ssh -p "${SSH_PORT}" "${SSH_USER}@${SSH_HOST}" \
+            "bash -lc 'cd \"${APP_DIR}\" && node scripts/backup.js || true'"
+
+      - name: Sync files to server
+        env:
+          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          APP_DIR: ${{ secrets.APP_DIR }}
+        run: |
+          rsync -az --delete \
+            --exclude='.git' \
+            --exclude='node_modules' \
+            --exclude='server/data' \
+            -e "ssh -p ${SSH_PORT}" \
+            . "${SSH_USER}@${SSH_HOST}:${APP_DIR}/"
+
+      - name: Install deps & restart service
+        env:
+          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
           APP_DIR: ${{ secrets.APP_DIR }}
           SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
         run: |
-          ssh -p "${{ secrets.SSH_PORT || 22 }}" "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
-            "APP_DIR='${APP_DIR}' SERVICE_NAME='${SERVICE_NAME}' bash '${APP_DIR}/scripts/deploy.sh'"
+          ssh -p "${SSH_PORT}" "${SSH_USER}@${SSH_HOST}" \
+            "bash -lc 'cd \"${APP_DIR}\" && npm install --workspaces --include-workspace-root --omit=dev && sudo systemctl restart \"${SERVICE_NAME}\"'"
+          ENDSSH

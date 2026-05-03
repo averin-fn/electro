@@ -1,0 +1,67 @@
+# GitHub Actions: автоматическая сборка и деплой по push в main.
+#
+# Требуемые secrets:
+#   SSH_HOST            — адрес сервера
+#   SSH_PORT            — порт SSH (например 22)
+#   SSH_USER            — пользователь
+#   SSH_PRIVATE_KEY     — приватный SSH-ключ (PEM)
+#   APP_DIR             — путь до приложения на сервере (например /opt/electro)
+#   SERVICE_NAME        — имя systemd-сервиса (например electro)
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install
+        run: npm install --workspaces --include-workspace-root
+
+      - name: Build client
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-dist
+          path: client/dist
+
+  deploy:
+    name: Deploy to server
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add host key
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${{ secrets.SSH_PORT || 22 }}" -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Run remote deploy
+        env:
+          APP_DIR: ${{ secrets.APP_DIR }}
+          SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
+        run: |
+          ssh -p "${{ secrets.SSH_PORT || 22 }}" "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "APP_DIR='${APP_DIR}' SERVICE_NAME='${SERVICE_NAME}' bash -lc '
+              cd \"\$APP_DIR\" &&
+              ./scripts/deploy.sh
+            '"

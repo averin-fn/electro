@@ -1,0 +1,19 @@
+# Пример unit-файла systemd для запуска приложения на сервере.
+# Скопировать в /etc/systemd/system/electro.service и поправить пути/пользователя.
+
+[Unit]
+Description=Electro — приложение для составления смет
+After=network.target
+
+[Service]
+Type=simple
+User=electro
+WorkingDirectory=/opt/electro
+Environment=NODE_ENV=production
+Environment=PORT=4000
+ExecStart=/usr/bin/node server/src/index.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

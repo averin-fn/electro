@@ -1,0 +1,19 @@
+{
+  "name": "@electro/server",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Backend API for the Electro estimate app",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

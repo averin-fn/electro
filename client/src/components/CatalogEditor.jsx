@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { generateUUID } from "../utils/uuid.js";
 
 /**
  * Редактор каталога — master/detail.
@@ -390,11 +391,11 @@ function NodeEditor({ node, onChange, onDelete, depth = 0 }) {
 /* ------------------------------------------------------------------ */
 
 function newGroup(title) {
-  return { id: crypto.randomUUID(), title, children: [] };
+  return { id: generateUUID(), title, children: [] };
 }
 
 function newLeaf(title, price) {
-  return { id: crypto.randomUUID(), title, price };
+  return { id: generateUUID(), title, price };
 }
 
 function clone(obj) {

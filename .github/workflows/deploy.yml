@@ -86,7 +86,8 @@ jobs:
           rsync -az --delete \
             --exclude='.git' \
             --exclude='node_modules' \
-            --exclude='server/data' \
+            --exclude='server/data/works.json' \
+            --exclude='server/data/backups' \
             -e "ssh -p ${SSH_PORT}" \
             . "${SSH_USER}@${SSH_HOST}:${APP_DIR}/"
 
@@ -98,6 +99,24 @@ jobs:
           APP_DIR: ${{ secrets.APP_DIR }}
           SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
         run: |
-          ssh -p "${SSH_PORT}" "${SSH_USER}@${SSH_HOST}" \
-            "bash -lc 'cd \"${APP_DIR}\" && npm install --workspaces --include-workspace-root --omit=dev && sudo systemctl restart \"${SERVICE_NAME}\"'"
-          ENDSSH
+          ssh -p "${SSH_PORT}" "${SSH_USER}@${SSH_HOST}" "bash -lc '
+            set -euo pipefail
+            cd \"${APP_DIR}\"
+            npm install --workspaces --include-workspace-root --omit=dev
+
+            # Регистрируем сервис, если ещё не установлен
+            SERVICE_FILE=\"/etc/systemd/system/${SERVICE_NAME}.service\"
+            if [ ! -f \"\$SERVICE_FILE\" ]; then
+              echo \"==> Устанавливаем systemd unit ${SERVICE_NAME}\"
+              sudo cp \"${APP_DIR}/scripts/electro.service\" \"\$SERVICE_FILE\"
+              sudo sed -i \"s|WorkingDirectory=.*|WorkingDirectory=${APP_DIR}|\" \"\$SERVICE_FILE\"
+              sudo sed -i \"s|User=.*|User=\$(whoami)|\" \"\$SERVICE_FILE\"
+              sudo systemctl daemon-reload
+            fi
+
+            # Включаем автозапуск при загрузке сервера (идемпотентно)
+            sudo systemctl enable \"${SERVICE_NAME}\"
+
+            sudo systemctl restart \"${SERVICE_NAME}\"
+            sudo systemctl status \"${SERVICE_NAME}\" --no-pager || true
+          '"

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "./api.js";
 import { exportToExcel } from "./utils/excel.js";
+import { generateUUID } from "./utils/uuid.js";
 import AddWorkPanel from "./components/AddWorkPanel.jsx";
 import EstimateList from "./components/EstimateList.jsx";
 import CatalogEditor from "./components/CatalogEditor.jsx";
@@ -65,7 +66,7 @@ export default function App() {
   );
 
   const addItem = (item) =>
-    setItems((prev) => [...prev, { ...item, id: crypto.randomUUID() }]);
+    setItems((prev) => [...prev, { ...item, id: generateUUID() }]);
 
   const removeItem = (id) =>
     setItems((prev) => prev.filter((i) => i.id !== id));
@@ -96,7 +97,7 @@ export default function App() {
 
   const handleLoadEstimate = (estimate) => {
     if (!confirm(`Загрузить смету «${estimate.name}»? Текущий список будет заменён.`)) return;
-    const loaded = estimate.items.map((it) => ({ ...it, id: crypto.randomUUID() }));
+    const loaded = estimate.items.map((it) => ({ ...it, id: generateUUID() }));
     setItems(loaded);
   };
 

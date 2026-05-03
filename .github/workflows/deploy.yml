@@ -61,7 +61,4 @@ jobs:
           SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
         run: |
           ssh -p "${{ secrets.SSH_PORT || 22 }}" "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
-            "APP_DIR='${APP_DIR}' SERVICE_NAME='${SERVICE_NAME}' bash -lc '
-              cd \"\$APP_DIR\" &&
-              ./scripts/deploy.sh
-            '"
+            "APP_DIR='${APP_DIR}' SERVICE_NAME='${SERVICE_NAME}' bash '${APP_DIR}/scripts/deploy.sh'"
